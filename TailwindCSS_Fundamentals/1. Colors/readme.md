@@ -21,5 +21,3 @@
 **5. Arbitrary colors**
 
 ![image](./arbitrary%20example.png)
-
-[live@]()
