@@ -16,7 +16,7 @@
     <!-- Margin -->
     <!-- https://tailwindcss.com/docs/margin -->
 
-    <h1 class="text-4xl font-bold">1. Margin </h1>
+    <h1 class="text-4xl font-bold">1. Margin </h1><br>
 
     <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-5 flex flex-col gap-3 mb-20">
         <div class="bg-red-500 p-5 flex w-[100px] m-20">m-20</div>
@@ -38,10 +38,12 @@
     <!-- Arbitrary Spacing -->
      <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
 
-    <h1 class="text-4xl font-bold">2. Arbitrary Spacing </h1>
+    <h1 class="text-4xl font-bold">2. Arbitrary Spacing </h1><br>
+
+    <!----------------------------- 1st table ------------------------------------>
 
     <div>
-      <table class="border-separate border-spacing-2 border border-gray-400 dark:border-gray-500 w-[600px] h-[400px] text-2xl">
+      <table class="border-separate border-spacing-3 border border-gray-400 dark:border-gray-500 w-[600px] h-[400px] text-2xl mb-10">
   <thead>
     <tr>
       <th class="border border-gray-300 dark:border-gray-600">State</th>
@@ -64,11 +66,119 @@
   </tbody>
 </table>
     </div>
+
+    <!----------------------------- 2nd table ------------------------------------>
+
+    <div>
+      <table class="border-separate border-spacing-x-3 border border-gray-400 dark:border-gray-500 w-[600px] h-[400px] text-2xl mb-10">
+  <thead>
+    <tr>
+      <th class="border border-gray-300 dark:border-gray-600">State</th>
+      <th class="border border-gray-300 dark:border-gray-600">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Indiana</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Ohio</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Michigan</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <!-------------------------------- 3rd table -------------------------------------->
+
+    <div>
+      <table class="border-separate border-spacing-y-3 border border-gray-400 dark:border-gray-500 w-[600px] h-[400px] text-2xl mb-20">
+  <thead>
+    <tr>
+      <th class="border border-gray-300 dark:border-gray-600">State</th>
+      <th class="border border-gray-300 dark:border-gray-600">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Indiana</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Ohio</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Michigan</td>
+      <td class="border border-gray-300 dark:border-gray-700 text-center">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
     <!-- Padding -->
     <!-- https://tailwindcss.com/docs/padding -->
 
+       <h1 class="text-4xl font-bold">3. Padding </h1><br>
+
+    <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-9 flex flex-col gap-4 mb-20">
+      
+      <div class="bg-red-500 pt-8 w-[100px] h-[80px]">pt-8</div>
+      <div class="bg-red-500 pr-8 w-[100px] h-[80px]">pr-8</div>
+      <div class="bg-red-500 pb-8 w-[100px] h-[80px]">pb-8</div>
+      <div class="bg-red-500 pl-8 w-[100px] h-[80px]">pl-8</div>
+      <div class="bg-red-500 px-8 w-[100px] h-[80px]">px-8</div>
+      <div class="bg-red-500 py-8 w-[100px] h-[80px]">py-8</div>
+      <div class="bg-red-500 ps-8 w-[150px] h-[80px]">padding</div>
+      <div class="bg-red-500 pe-8 w-[150px] h-[80px]">padding</div>
+      <div dir="rtl" class="flex flex-col gap-3">
+        <div class="bg-red-500 ps-9 w-[150px] h-[80px]">padding</div>
+        <div class="bg-red-500 pe-8 w-[150px] h-[80px]">padding</div>
+      </div>
+    </div>
+
     <!-- https://tailwindcss.com/docs/space -->
     <!-- Space Between X -->
+
+    <h1 class="text-4xl font-bold">4. Space between x </h1><br>
+    
+    <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-9 flex space-x-4 mb-15">
+      <div class="bg-white w-[100px] h-[80px]">01</div>
+      <div class="bg-white w-[100px] h-[80px]">02</div>
+      <div class="bg-white w-[100px] h-[80px]">03</div>
+      <div class="bg-white w-[100px] h-[80px]">04</div>
+    </div>
+
+    <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-9 flex flex-row-reverse space-x-4 space-x-reverse mb-20">
+      <div class="bg-white w-[100px] h-[80px]">01</div>
+      <div class="bg-white w-[100px] h-[80px]">02</div>
+      <div class="bg-white w-[100px] h-[80px]">03</div>
+      <div class="bg-white w-[100px] h-[80px]">04</div>
+    </div>
+
     <!-- Space Between Y -->
+
+    <h1 class="text-4xl font-bold">5. Space between y </h1><br>
+
+    <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-9 flex flex-col space-y-4 mb-15">
+      <div class="bg-white w-[150px] h-[50px]">01</div>
+      <div class="bg-white w-[150px] h-[50px]">02</div>
+      <div class="bg-white w-[150px] h-[50px]">03</div>
+      <div class="bg-white w-[150px] h-[50px]">04</div>
+    </div>
+
+    <div class="w-[600px] bg-stone-900 text-grey-200 text-xl p-9 flex flex-col flex-col-reverse space-y-4 space-y-reverse">
+      <div class="bg-white w-[150px] h-[50px]">01</div>
+      <div class="bg-white w-[150px] h-[50px]">02</div>
+      <div class="bg-white w-[150px] h-[50px]">03</div>
+      <div class="bg-white w-[150px] h-[50px]">04</div>
+    </div>
+
+
   </body>
 </html>
