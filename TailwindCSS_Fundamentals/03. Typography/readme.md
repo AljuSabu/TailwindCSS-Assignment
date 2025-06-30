@@ -4,11 +4,11 @@
 
 **1. Font Size**
 
-- *Basic example*
+- ***Basic example***
 
 ![image](./typography%20images/basic.png)
 
-- *Setting the line-height*
+- ***Setting the line-height***
 
 ![image](./typography%20images/setting%20line.png)
 
