@@ -5,10 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
+    <title>Layout Position</title>
   </head>
   <body class="p-20">
     <!-- https://tailwindcss.com/docs/position -->
+
+    <h1 class="text-4xl font-bold">1. Relative and Absolute</h1><br>
+
+    <div class="bg-rose-300 text-center text-rose-700 text-2xl p-3 w-[300px] h-[150px] rounded-2xl relative mb-20">
+      <p>Relative Parent</p>
+      <div class="bg-rose-600 w-[80px] h-[70px] rounded-full text-center text-base p-3 text-rose-200 absolute bottom-0 right-0">
+        <p>absolute child</p>
+      </div>
+    </div>
+
+    <!-- --------------------- Fixed --------------------------- -->
+
+    <h1 class="text-4xl font-bold">2. Fixed</h1><br>
+
+    <div class="border w-[500px] h-[400px] overflow-auto mb-20">
+      <!-- <div class="border bg-stone-300 h-[66px] w-[477px] text-2xl p-4 fixed"><strong>Fixed Bar</strong></div> -->
+      <div class="pt-16">
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 01</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 02</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 03</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 04</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 05</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 06</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 07</div>
+      </div>
+    </div>
+
+    <!-- --------------------- Sticky --------------------------- -->
+
+    <h1 class="text-4xl font-bold">3. Sticky</h1><br>
+
+    <div class="border w-[500px] h-[400px] overflow-auto mb-20">
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 01</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 02</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 03</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 04</div>
+        <div class="border bg-stone-300 h-[67px] w-[477px] text-2xl p-4 sticky top-0"><strong>Sticky Bar</strong></div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 05</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 06</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 07</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 08</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 09</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 10</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 09</div>
+        <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 09</div>
+    </div>
+
     <!-- https://tailwindcss.com/docs/display -->
+
+    <!-- --------------------- Inline --------------------------- -->
+
+    
+    <h1 class="text-4xl font-bold">4. Inline</h1><br>
+
+    <div class="bg-stone-200 p-3 w-[500px] h-[450px] text-lg rounded-xl mb-10">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur enim totam exercitationem quibusdam deleniti, quidem molestiae laboriosam perspiciatis harum non nemo tempore ullam? Numquam nihil quas vel enim laudantium eum distinctio <span class="inline text-xl"><strong>display: inline</strong></span> necessitatibus! Perferendis saepe vitae ullam aliquid eum incidunt sint iusto earum sunt molestias hic est tempora, quos ipsam odit veritatis non illum! Necessitatibus maxime doloremque minima, et eligendi atque reiciendis velit sunt aut expedita inventore enim laboriosam aliquid aspernatur esse quam perspiciatis excepturi, deserunt nihil dignissimos labore exercitationem officia iste nulla? Totam, ea facere accusamus nostrum dicta ipsum. Nesciunt quisquam ratione explicabo aliquid commodi hic maxime animi tenetur!</p>
+    </div>
+
+      <div class="bg-stone-200 p-3 w-[500px] h-[450px] text-lg rounded-xl mb-10">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur enim totam exercitationem quibusdam deleniti, quidem molestiae laboriosam perspiciatis harum non nemo tempore ullam? Numquam nihil quas <span class="inline-block text-xl"><strong>display: inline-block</strong></span> vel enim laudantium eum distinctio necessitatibus! Perferendis saepe vitae ullam aliquid eum incidunt sint iusto earum sunt molestias hic est tempora, quos ipsam odit veritatis non illum! Necessitatibus maxime doloremque minima, et eligendi atque reiciendis velit sunt aut expedita inventore enim laboriosam aliquid aspernatur esse quam perspiciatis excepturi, deserunt nihil dignissimos labore exercitationem officia iste nulla? Totam, ea facere accusamus nostrum dicta ipsum. Nesciunt quisquam ratione explicabo aliquid commodi hic maxime animi tenetur!</p>
+    </div>
+
+        <div class="bg-stone-200 p-3 w-[500px] h-[480px] text-lg rounded-xl mb-20">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur enim totam exercitationem quibusdam deleniti, quidem molestiae laboriosam perspiciatis harum non nemo tempore ullam? Numquam nihil quas vel enim laudantium eum distinctio <span class="block text-xl"><strong>display: block</strong></span> necessitatibus! Perferendis saepe vitae ullam aliquid eum incidunt sint iusto earum sunt molestias hic est tempora, quos ipsam odit veritatis non illum! Necessitatibus maxime doloremque minima, et eligendi atque reiciendis velit sunt aut expedita inventore enim laboriosam aliquid aspernatur esse quam perspiciatis excepturi, deserunt nihil dignissimos labore exercitationem officia iste nulla? Totam, ea facere accusamus nostrum dicta ipsum. Nesciunt quisquam ratione explicabo aliquid commodi hic maxime animi tenetur!</p>
+    </div>
+
+    <!-- --------------------- Flow Root --------------------------- -->
+
+    <h1 class="text-4xl font-bold">5. Flow Root</h1><br>
+
+    <div class="bg-stone-200 p-3 w-[500px] h-[465px] rounded-xl text-lg mb-20">
+      <div class="flow-root mb-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur fugit aperiam ut est distinctio eveniet, vero commodi, ducimus eius, quidem reiciendis quas tempore cum maxime vel excepturi blanditiis. Voluptate reprehenderit asperiores nulla, deserunt quod neque dolor magni nisi eum officia recusandae commodi ducimus libero animi? Sapiente, eaque voluptatem? Facere, ad.</div>
+      <div class="flow-root">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque delectus doloribus recusandae, minus impedit aliquam, voluptate voluptatum ipsum omnis odit aliquid quam eos quis nulla sapiente provident, repudiandae cum dicta suscipit quidem! Cumque corporis, maiores sapiente id facere ipsam mollitia officia earum quis ratione aperiam. Impedit rem consectetur cupiditate.</div>
+    </div>
+
+    <h1 class="text-4xl font-bold">6. Flex</h1><br>
+
+    <div class="bg-green-700 w-[500px] h-[350px] text-2xl flex items-center justify-center rounded-2xl">
+      <div class="bg-green-100 w-[100px] h-[90px] text-green-800 rounded-full flex items-center justify-center">Flex</div>
+    </div>
+
+    <!-- --------------------- Grid --------------------------- -->
+
+    <h1 class="text-4xl font-bold">7. Grid</h1><br>
+
+    <div class="bg-stone-100 w-[600px] h-[350px]">
+      <div class="grid-cols-3 grid-rows-3 gap-3">
+      </div>
+    </div>
+
   </body>
 </html>
