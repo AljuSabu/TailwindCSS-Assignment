@@ -7,15 +7,95 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Backgrounds & Shadows</title>
   </head>
-  <body>
+  <body class="p-20">
     <!-- Background Images -->
     <!-- https://tailwindcss.com/docs/background-image -->
 
+
+    <h1 class="text-4xl font-bold">1. Background Images</h1><br>
+
+    <div class="border w-[600px] h-[400px] bg-cover bg-[url(https://images.unsplash.com/photo-1743704458905-9edf92294d7e?q=80&w=2108&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
+
+    <div class=" w-[600px] h-[400px] mt-10 relative bg-stone-700">
+      <img src="https://images.unsplash.com/photo-1743704458905-9edf92294d7e?q=80&w=2108&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" class="absolute w-[600px] h-[400px] object-cover mix-blend-overlay">
+    </div>
+
+
     <!-- Shadows -->
     <!-- https://tailwindcss.com/docs/drop-shadow -->
+
+
+    <h1 class="text-4xl font-bold mt-20">2. Shadows</h1><br>
+
+    <div class="flex w-[900px] h-[200px] p-5 gap-20 text-lg text-stone-500">
+      <div class="bg-stone-100 w-[150px] h-[100px] rounded-2xl flex justify-center items-center shadow-md shadow-black/30">shadow-md</div>
+      <div class="bg-stone-100 w-[150px] h-[100px] rounded-2xl flex justify-center items-center shadow-lg shadow-black/30">shadow-lg</div>
+      <div class="bg-stone-100 w-[150px] h-[100px] rounded-2xl flex justify-center items-center shadow-xl shadow-black/30">shadow-xl</div>
+      <div class="bg-stone-100 w-[150px] h-[100px] rounded-2xl flex justify-center items-center shadow-2xl shadow-black/60">shadow-2xl</div>
+    </div>
+
+
+    <!-- ------------------------------------ Irregular Shapes ---------------------------------- -->
+
+
+    <h1 class="text-4xl font-bold mt-20">3. Irregular Shapes</h1><br>
+
+    <div class="flex w-[600px] h-[200px] p-5 gap-20 text-8xl text-stone-200 font-bold drop-shadow-xl">Hello World</div>
+
+
+    <!-- ------------------------------------ Coloured Shadows -------------------------------- -->
+
+     
+    <h1 class="text-4xl font-bold mt-20">4. coloured Shadows</h1><br>
+
+    <div class="flex w-[900px] h-[200px] p-5 gap-20 text-lg">
+      <div class="bg-cyan-400 w-[150px] h-[100px] rounded-2xl flex shadow-xl shadow-cyan-400/60"></div>
+      <div class="bg-blue-400 w-[150px] h-[100px] rounded-2xl flex shadow-xl shadow-blue-400/60"></div>
+      <div class="bg-violet-400 w-[150px] h-[100px] rounded-2xl shadow-xl shadow-violet-400/60"></div>
+      <div class="bg-fuchsia-400 w-[150px] h-[100px] rounded-2xl shadow-2xl shadow-fuchsia-400"></div>
+    </div>
+
+
     <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
 
     <!-- Gradients -->
     <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+
+
+    <h1 class="text-4xl font-bold mt-20">5. Gradients</h1><br>
+
+    <div class=" w-[900px] h-[500px] p-3">
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-lime-500 to-teal-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-emerald-500 to-sky-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+    </div>
+
+
+    <!-- ----------------------------------- Gradient Color Stops ----------------------------------------- -->
+
+
+    <h1 class="text-4xl font-bold mt-20">6. Gradient Color Stops</h1><br>
+
+    <div class=" w-[900px] h-[500px] p-3">
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-amber-500 via-violet-500 to-lime-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-green-500 via-sky-500 to-teal-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-cyan-500 via-pink-500 to-blue-500"></div>
+      <div class="rounded-3xl h-20 mb-10 bg-gradient-to-r from-indigo-500 via-emerald-500 to-purple-500"></div>
+    </div>
+
+
+    <!-- ----------------------------------- Radial Gradient --------------------------------------- -->
+
+<!-- 
+    <h1 class="text-4xl font-bold mt-20">7. Radial Gradient</h1><br>
+
+      <div class="flex border w-[800px] h-[250px] p-5 gap-20 text-lg">
+      <div class="border w-48 h-48 rounded-full bg-radial from-pink-400 to-fuchsia-700"></div>
+      <div class="border w-48 h-48 rounded-full bg-radial from-pink-400 to-fuchsia-700"></div>
+      <div class="border w-48 h-48 rounded-full bg-radial from-pink-400 to-fuchsia-700"></div>
+    </div>
+ -->
+
   </body>
 </html>

@@ -7,13 +7,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Borders</title>
   </head>
-  <body>
+  <body class="p-20">
     <!-- Border Width & Colors -->
     <!-- https://tailwindcss.com/docs/border-width -->
+
+    <h1 class="text-4xl font-bold">1. Border Width & Colors</h1><br>
+
+    <div class="w-[700px] h-[250px] flex p-4 gap-10 text-2xl">
+      <div class="border-2 border-emerald-600 w-48 flex justify-center items-center">border-2</div>
+      <div class="border-4 border-purple-600 w-48 flex justify-center items-center">border-4</div>
+      <div class="border-8 border-pink-600 w-48 flex justify-center items-center">border-8</div>
+    </div>
+
 
     <!-- Border Radius -->
     <!-- https://tailwindcss.com/docs/border-radius -->
 
+
+    <h1 class="text-4xl font-bold mt-20">2. Border Radius</h1><br>
+
+    <div class="w-[800px] h-[550px] grid grid-cols-4 p-4 gap-10 text-xl text-white">
+      <div class="border bg-green-500 flex justify-center items-center rounded-lg">rounded-lg</div>
+      <div class="border bg-green-500 flex justify-center items-center rounded-xl">rounded-xl</div>
+      <div class="border bg-green-500 flex justify-center items-center rounded-3xl">rounded-3xl</div>
+      <div class="border bg-green-500 flex justify-center items-center rounded-full">rounded-full</div>
+      <div class="border bg-blue-500 flex justify-center items-center rounded-t-3xl">rounded-t</div>
+      <div class="border bg-blue-500 flex justify-center items-center rounded-r-3xl">rounded-r</div>
+      <div class="border bg-blue-500 flex justify-center items-center rounded-b-3xl">rounded-b</div>
+      <div class="border bg-blue-500 flex justify-center items-center rounded-l-3xl">rounded-l</div>
+      <div class="border bg-rose-500 flex justify-center items-center rounded-tl-3xl">rounded-tl</div>
+      <div class="border bg-rose-500 flex justify-center items-center rounded-tr-3xl">rounded-tr</div>
+      <div class="border bg-rose-500 flex justify-center items-center rounded-br-3xl">rounded-br</div>
+      <div class="border bg-rose-500 flex justify-center items-center rounded-bl-3xl">rounded-bl</div>
+    </div>
+
+
     <!-- Specific Sides -->
+
+
+    <h1 class="text-4xl font-bold mt-20">3. Specific Sides</h1><br>
+
+    <div class="w-[800px] h-[400px] grid grid-cols-4 p-4 gap-10 text-xl ">
+      <div class="border-t-8 bg-stone-100 border-emerald-600 flex justify-center items-center">border-t</div>
+      <div class="border-r-8 bg-stone-100 border-emerald-600 flex justify-center items-center">border-r</div>
+      <div class="border-b-8 bg-stone-100 border-emerald-600 flex justify-center items-center">border-b</div>
+      <div class="border-l-8 bg-stone-100 border-emerald-600 flex justify-center items-center">border-l</div>
+      <div class="border-x-8 bg-stone-100 border-blue-600 flex justify-center items-center col-span-2">border-x</div>
+      <div class="border-y-8 bg-stone-100 border-rose-600 flex justify-center items-center col-span-2">border-y</div>
+    </div>
+
   </body>
 </html>

@@ -10,21 +10,24 @@
   <body class="p-20">
     <!-- https://tailwindcss.com/docs/position -->
 
+
     <h1 class="text-4xl font-bold">1. Relative and Absolute</h1><br>
 
-    <div class="bg-rose-300 text-center text-rose-700 text-2xl p-3 w-[300px] h-[150px] rounded-2xl relative mb-20">
+    <div class="bg-rose-300 flex justify-center items-center text-rose-700 text-2xl p-3 w-[400px] h-[250px] rounded-3xl relative mb-20">
       <p>Relative Parent</p>
-      <div class="bg-rose-600 w-[80px] h-[70px] rounded-full text-center text-base p-3 text-rose-200 absolute bottom-0 right-0">
+      <div class="bg-rose-600 w-28 h-28 rounded-full flex justify-center items-center text-center text-lg p-3 text-rose-200 absolute bottom-0 right-0">
         <p>absolute child</p>
       </div>
     </div>
 
+
     <!-- --------------------- Fixed --------------------------- -->
+
 
     <h1 class="text-4xl font-bold">2. Fixed</h1><br>
 
     <div class="border w-[500px] h-[400px] overflow-auto mb-20">
-      <!-- <div class="border bg-stone-300 h-[66px] w-[477px] text-2xl p-4 fixed"><strong>Fixed Bar</strong></div> -->
+      <div class="border bg-stone-300 h-[66px] w-[477px] text-2xl p-4 fixed"><strong>Fixed Bar</strong></div>
       <div class="pt-16">
         <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 01</div>
         <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 02</div>
@@ -36,7 +39,9 @@
       </div>
     </div>
 
+
     <!-- --------------------- Sticky --------------------------- -->
+
 
     <h1 class="text-4xl font-bold">3. Sticky</h1><br>
 
@@ -55,6 +60,7 @@
         <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 09</div>
         <div class="border bg-stone-100 h-[80px] text-xl p-5">Content 09</div>
     </div>
+
 
     <!-- https://tailwindcss.com/docs/display -->
 
@@ -75,7 +81,9 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur enim totam exercitationem quibusdam deleniti, quidem molestiae laboriosam perspiciatis harum non nemo tempore ullam? Numquam nihil quas vel enim laudantium eum distinctio <span class="block text-xl"><strong>display: block</strong></span> necessitatibus! Perferendis saepe vitae ullam aliquid eum incidunt sint iusto earum sunt molestias hic est tempora, quos ipsam odit veritatis non illum! Necessitatibus maxime doloremque minima, et eligendi atque reiciendis velit sunt aut expedita inventore enim laboriosam aliquid aspernatur esse quam perspiciatis excepturi, deserunt nihil dignissimos labore exercitationem officia iste nulla? Totam, ea facere accusamus nostrum dicta ipsum. Nesciunt quisquam ratione explicabo aliquid commodi hic maxime animi tenetur!</p>
     </div>
 
+
     <!-- --------------------- Flow Root --------------------------- -->
+
 
     <h1 class="text-4xl font-bold">5. Flow Root</h1><br>
 
@@ -86,17 +94,73 @@
 
     <h1 class="text-4xl font-bold">6. Flex</h1><br>
 
-    <div class="bg-green-700 w-[500px] h-[350px] text-2xl flex items-center justify-center rounded-2xl">
+    <div class="bg-green-700 w-[500px] h-[350px] text-2xl flex items-center justify-center rounded-2xl mb-20">
       <div class="bg-green-100 w-[100px] h-[90px] text-green-800 rounded-full flex items-center justify-center">Flex</div>
     </div>
 
-    <!-- --------------------- Grid --------------------------- -->
 
-    <h1 class="text-4xl font-bold">7. Grid</h1><br>
+    <!-- ------------------------- Inline Flex ------------------------------- -->
+     
 
-    <div class="bg-stone-100 w-[600px] h-[350px]">
-      <div class="grid-cols-3 grid-rows-3 gap-3">
+    <h1 class="text-4xl font-bold">7. Inline Flex</h1><br>
+
+    <div class="bg-stone-100 w-[600px] h-[200px] p-3 mb-20">
+      <div class="text-xl">Today I spent most of the day researching ways to take advantage of the fact that bottles can be returned for 10 cents in Michigan, but only 5 cents here.
+        <span class="inline-flex items-baseline">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="mx-1 w-9 h-7 self-center rounded-full">
+          <span><strong>Aldrina</strong></span>
+        </span>
+        keeps telling me there is no way to make it work, that she has run the numbers on every possible approach, but I just have to believe there's a way to make it work, there's simply too much opportunity here.
       </div>
+    </div>
+
+
+    <!-- --------------------------- Grid ------------------------------------ -->
+
+
+    <h1 class="text-4xl font-bold">8. Grid</h1><br>
+
+    <div class="w-[600px] h-[400px] text-xl text-white grid grid-cols-3 gap-8">
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl">Grid 1</div>
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl row-span-2">Grid 2</div>
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl">Grid 3</div>
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl row-span-2">Grid 4</div>
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl">Grid 5</div>
+        <div class="border bg-blue-500 flex justify-center items-center rounded-2xl col-span-2">Grid 6</div>
+    </div>
+
+
+    <!-- ------------------------- Table -------------------------------------- -->
+
+
+    <h1 class="text-4xl font-bold mt-20">9. Table</h1><br>
+
+    <div class="border bg-stone-100 table w-[700px] h-[400px] p-3 text-lg ">
+  <div class="table-header-group text-xl font-bold">
+    <div class="table-row">
+      <div class="table-cell text-left">Song</div>
+      <div class="table-cell text-left">Artist</div>
+      <div class="table-cell text-left">Year</div>
+    </div>
+  </div>
+  <div class="table-row-group">
+    <div class="table-row">
+      <div class="table-cell text-left p-3 border-r border-b">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+      <div class="table-cell text-left p-3 border-r border-b">Malcolm Lockyer</div>
+      <div class="table-cell text-left p-3 border-b">1961</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell text-left p-3 border-r border-b">Witchy Woman</div>
+      <div class="table-cell text-left p-3 border-r border-b">The Eagles</div>
+      <div class="table-cell text-left p-3 border-b">1972</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell text-left p-3 border-r">Shining Star</div>
+      <div class="table-cell text-left p-3 border-r">Earth, Wind, and Fire</div>
+      <div class="table-cell text-left p-3">1975</div>
+    </div>
+  </div>
+</div>
     </div>
 
   </body>
