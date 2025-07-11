@@ -7,7 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Breakpoints & Media Queries</title>
   </head>
-  <body>
+  <body class="p-20">
     <!-- https://tailwindcss.com/docs/responsive-design -->
+
+    <h1 class="text-4xl font-bold">1. Breakpoints & Media Queries</h1><br>
+
+
+    <div class="max-w-md rounded-2xl bg-stone-100 shadow-xl md:max-w-3xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-64 w-full object-cover rounded-2xl md:h-full md:w-64" src="https://images.unsplash.com/photo-1554478416-6061b7e29d52?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+        </div>
+        <div class="flex items-center pr-5 md:flex-col md:mb-5">
+          <div class="p-6">
+            <div class="font-bold text-xl md:font-bold md:text-3xl text-blue-400 uppercase">company retreats</div>
+              <p class="mt-5 text-gray-500 md:text-xl">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that. Come and enjoy the best there is. </p>
+          </div>
+          <button class="bg-green-200 px-8 py-3 rounded-2xl shadow-md text-stone-400">Book Now</button>
+        </div>
+      </div>
+    </div>
+  
   </body>
 </html>
