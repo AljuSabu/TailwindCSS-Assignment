@@ -7,16 +7,177 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Flex</title>
   </head>
-  <body>
+  <body class="p-20">
     <!-- https://tailwindcss.com/docs/flex -->
+
+
+
+    <h1 class="text-4xl font-bold mb-10">1. Flex</h1>
+
+    <p class="text-2xl font-bold text-stone-500 mb-5">Flex-1</p>
+    <div class="border-4 rounded-2xl min-w-96 w-[1100px] h-[170px] text-2xl text-stone-500 p-6 flex gap-6 overflow-auto resize-x mb-10">
+      <div class="shadow-md bg-stone-100 rounded-2xl w-32 flex justify-center items-center flex-none">01</div>
+      <div class="shadow-md bg-stone-100 rounded-2xl w-48 flex justify-center items-center flex-1">02</div>
+      <div class="shadow-md bg-stone-100 rounded-2xl w-64 flex justify-center items-center flex-1">03</div>
+      <div class="shadow-md bg-stone-100 rounded-2xl w-32 flex justify-center items-center flex-1">04</div>
+    </div>
+
+    <p class="text-2xl font-bold text-green-500 mb-5">Flex-initial</p>
+    <div class="border-4 rounded-2xl border-green-200 min-w-96 w-[1100px] h-[170px] text-2xl text-green-500 p-6 flex gap-6 overflow-auto resize-x mb-10">
+      <div class="shadow-md bg-green-100 rounded-2xl w-32 flex justify-center items-center flex-none">01</div>
+      <div class="shadow-md bg-green-100 rounded-2xl w-64 flex justify-center items-center flex-initial">02</div>
+      <div class="shadow-md bg-green-100 rounded-2xl w-48 flex justify-center items-center flex-initial">03</div>
+      <div class="shadow-md bg-green-100 rounded-2xl w-96 flex justify-center items-center flex-initial">04</div>
+    </div>
+
+    
+    <p class="text-2xl font-bold text-blue-500 mb-5">Flex-auto</p>
+    <div class="border-4 rounded-2xl border-blue-200 min-w-96 w-[1100px] h-[170px] text-2xl text-blue-500 p-6 flex gap-6 overflow-auto resize-x mb-32">
+      <div class="shadow-md bg-blue-100 rounded-2xl w-32 flex justify-center items-center flex-none">01</div>
+      <div class="shadow-md bg-blue-100 rounded-2xl w-96 flex justify-center items-center flex-auto">02</div>
+      <div class="shadow-md bg-blue-100 rounded-2xl w-48 flex justify-center items-center flex-auto">03</div>
+      <div class="shadow-md bg-blue-100 rounded-2xl w-64 flex justify-center items-center flex-auto">04</div>
+    </div>
+
+
 
     <!-- https://tailwindcss.com/docs/flex-direction#column -->
 
+
+
+    <h1 class="text-4xl font-bold mb-10">2. Flex Direction</h1>
+
+    <p class="text-2xl font-bold text-stone-500 mb-5">Flex-row</p>
+    <div class="border shadow-md rounded-2xl w-[1200px] text-2xl text-white mb-10">
+      <div class="h-[150px] p-6 flex gap-6">
+        <div class="bg-red-500 shadow-md w-48 rounded-2xl flex justify-center items-center">01</div>
+        <div class="bg-red-500 shadow-md w-48 rounded-2xl flex justify-center items-center">02</div>
+        <div class="bg-red-500 shadow-md w-48 rounded-2xl flex justify-center items-center">03</div>
+        <div class="bg-red-500 shadow-md w-48 rounded-2xl flex justify-center items-center">04</div>
+      </div>
+      <div class="h-[150px] p-6 flex flex-row-reverse gap-6 ">
+        <div class="bg-yellow-400 shadow-md w-48 rounded-2xl flex justify-center items-center">01</div>
+        <div class="bg-yellow-400 shadow-md w-48 rounded-2xl flex justify-center items-center">02</div>
+        <div class="bg-yellow-400 shadow-md w-48 rounded-2xl flex justify-center items-center">03</div>
+        <div class="bg-yellow-400 shadow-md w-48 rounded-2xl flex justify-center items-center">04</div>
+      </div>
+    </div>
+
+    <p class="text-2xl font-bold text-stone-500 mb-5">Flex-col</p>
+    <div class="border shadow-md rounded-2xl w-[1200px] text-2xl text-white flex">
+      <div class="w-[600px] p-6 flex flex-col gap-4">
+        <div class="bg-fuchsia-400 shadow-md h-20 rounded-2xl flex justify-center items-center">01</div>
+        <div class="bg-fuchsia-400 shadow-md h-20 rounded-2xl flex justify-center items-center">02</div>
+        <div class="bg-fuchsia-400 shadow-md h-20 rounded-2xl flex justify-center items-center">03</div>
+        <div class="bg-fuchsia-400 shadow-md h-20 rounded-2xl flex justify-center items-center">04</div>
+      </div>
+      <div class="w-[600px] p-6 flex flex-col-reverse gap-4">
+        <div class="bg-green-400 shadow-md h-20 rounded-2xl flex justify-center items-center">01</div>
+        <div class="bg-green-400 shadow-md h-20 rounded-2xl flex justify-center items-center">02</div>
+        <div class="bg-green-400 shadow-md h-20 rounded-2xl flex justify-center items-center">03</div>
+        <div class="bg-green-400 shadow-md h-20 rounded-2xl flex justify-center items-center">04</div>
+      </div>
+    </div>
+
+
     <!-- https://tailwindcss.com/docs/justify-items -->
+
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-32">3. Justify Items</h1>
+
+    <p class="text-2xl font-bold text-stone-400 mb-6">justify-items-start</p>
+    <div class="border-4 rounded-2xl border-sky-200 min-w-max w-[900px] h-[250px] text-2xl text-white p-6 grid grid-cols-2 gap-6 resize-x overflow-auto  ">
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-start">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-sky-500">01</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-start">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-sky-500">02</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-start">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-sky-500">03</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-start">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-sky-500">04</div>
+      </div>
+    </div>
+
+    <p class="text-2xl font-bold text-stone-400 mt-10 mb-6">justify-items-end</p>
+    <div class="border-4 rounded-2xl border-indigo-200 min-w-max w-[900px] h-[250px] text-2xl text-white p-6 grid grid-cols-2 gap-6 resize-x overflow-auto">
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-end">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-indigo-500">01</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-end">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-indigo-500">02</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-end">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-indigo-500">03</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-end">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-indigo-500">04</div>
+      </div>
+    </div>
+
+    <p class="text-2xl font-bold text-stone-400 mt-10 mb-6">justify-items-center</p>
+    <div class="border-4 rounded-2xl border-purple-200 min-w-max w-[900px] h-[250px] text-2xl text-white p-6 grid grid-cols-2 gap-6 resize-x overflow-auto">
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-center">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-purple-500">01</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-center">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-purple-500">02</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-center">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-purple-500">03</div>
+      </div>
+      <div class="bg-stone-100 shadow-md rounded-2xl justify-items-center">
+        <div class="h-full w-20 rounded-2xl flex justify-center items-center bg-purple-500">04</div>
+      </div>
+    </div>
+
+
 
     <!-- https://tailwindcss.com/docs/order -->
 
+
+
+     <h1 class="text-4xl font-bold mb-10 mt-32">4. Order</h1>
+
+     <p class="text-2xl font-bold text-stone-400 mt-10">order-( number )</p>
+     <div class="w-[800px] h-[150px] p-5 text-2xl text-white flex justify-between">
+      <div class="border w-48 bg-rose-500 shadow-md rounded-3xl flex justify-center items-center order-3">01</div>
+      <div class="border w-48 bg-rose-500 shadow-md rounded-3xl flex justify-center items-center order-1">02</div>
+      <div class="border w-48 bg-rose-500 shadow-md rounded-3xl flex justify-center items-center order-2">03</div>
+     </div>
+
+     <p class="text-2xl font-bold text-stone-400 mt-10">order-( first / last )</p>
+     <div class="w-[800px] h-[150px] p-5 text-2xl text-white flex justify-between">
+      <div class="border w-48 bg-orange-500 shadow-md rounded-3xl flex justify-center items-center order-last">01</div>
+      <div class="border w-48 bg-orange-500 shadow-md rounded-3xl flex justify-center items-center">02</div>
+      <div class="border w-48 bg-orange-500 shadow-md rounded-3xl flex justify-center items-center order-first">03</div>
+     </div>
+
+
+
     <!-- Grow and shrink -->
     <!-- https://tailwindcss.com/docs/flex-shrink -->
+
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-32">5. Grow and Shrink</h1>
+
+    <p class="text-2xl font-bold text-stone-400 mt-10 mb-6">shrink</p>
+    <div class="border-4 border-teal-200 rounded-2xl min-w-[550px] w-[900px] h-[170px] text-2xl text-white p-6 flex gap-7 overflow-auto resize-x mb-10">
+      <div class="bg-teal-400 w-48 flex justify-center items-center rounded-2xl shadow-md flex-none">01</div>
+      <div class="bg-teal-400 w-96 flex p-3 justify-center items-center rounded-2xl shadow-md Shrink">02</div>
+      <div class="bg-teal-400 w-48 flex justify-center items-center rounded-2xl shadow-md flex-none">03</div>
+    </div>
+
+    <p class="text-2xl font-bold text-stone-400 mt-10 mb-6">shrink-0</p>
+    <div class="border-4 border-teal-200 rounded-2xl min-w-[550px] w-[1200px] h-[170px] text-2xl text-white p-6 flex gap-7 overflow-auto resize-x mb-10">
+      <div class="bg-cyan-400 flex-1 flex justify-center items-center rounded-2xl shadow-md">01</div>
+      <div class="bg-cyan-400 w-64 flex p-3 justify-center items-center rounded-2xl shadow-md Shrink">02</div>
+      <div class="bg-cyan-400 flex-1 flex justify-center items-center rounded-2xl shadow-md">03</div>
+    </div>
+
   </body>
 </html>
