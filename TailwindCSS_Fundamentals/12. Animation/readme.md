@@ -1,6 +1,6 @@
 # TailwindCSS Assignment
 
-## Transform & Transition
+## Animation
 
 **1. Transition Property**
 
