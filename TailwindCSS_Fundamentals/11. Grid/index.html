@@ -7,7 +7,69 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Grid</title>
   </head>
-  <body class="p-10">
+  <body class="p-20">
     <!-- https://tailwindcss.com/docs/grid-template-rows -->
+
+    <h1 class="text-4xl font-bold mb-10">1. Grid</h1>
+
+    <div class="shadow-lg shadow-black/30 rounded-2xl w-[900px] h-[400px] font-bold text-2xl text-white grid grid-cols-4 gap-6 p-6">
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">01</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">02</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">03</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">04</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">05</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">06</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">07</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">08</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">09</div>
+      <div class="bg-green-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">10</div>
+    </div>
+
+      <div class="shadow-lg shadow-black/30 rounded-2xl w-[700px] h-[500px] font-bold text-2xl text-white grid grid grid-flow-col grid-rows-4 gap-6 p-6 mt-10">
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">01</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">02</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">03</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">04</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">05</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">06</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">07</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">08</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">09</div>
+      <div class="bg-cyan-500 rounded-2xl shadow-md shadow-black/50 flex justify-center items-center">10</div>
+    </div>
+
+
+    <h1 class="text-4xl font-bold mt-32 mb-10">2. Subgrid</h1>
+
+    <div class="shadow-lg shadow-black/30 rounded-2xl w-[900px] h-[500px] font-bold text-2xl text-white grid grid-flow-col grid-rows-4 gap-6 p-6">
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">01</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">02</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">03</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">04</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">05</div>
+      <div class="row-span-3 grid grid-rows-subgrid gap-6">
+        <div class="row-start-2 bg-fuchsia-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">06</div>
+      </div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">07</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">08</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">09</div>
+      <div class="bg-blue-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">10</div>
+    </div>
+
+    <div class="shadow-lg shadow-black/30 rounded-2xl w-[1000px] h-[400px] font-bold text-2xl text-white grid grid-cols-4 gap-6 p-6 mt-10">
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">01</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">02</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">03</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">04</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">05</div>
+      <div class="col-span-3 grid grid-cols-subgrid gap-6">
+        <div class="col-start-2 bg-yellow-400 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">06</div>
+      </div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">07</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">08</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">09</div>
+      <div class="bg-red-500 rounded-2xl shadow-md shadow-black/60 flex justify-center items-center">10</div>
+    </div>
+
   </body>
 </html>
