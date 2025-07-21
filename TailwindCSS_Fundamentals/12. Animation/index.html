@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Transform & Transition</title>
+  </head>
+  <body class="p-20">
+    <!-- No Transition -->
+
+    <!-- Transition -->
+    <!-- 1. https://tailwindcss.com/docs/transition-property -->
+    
+
+    <h1 class="text-4xl font-bold mb-10">1. Transition Property</h1>
+
+    <div class="bg-stone-100 rounded-2xl shadow-md shadow-black/25 w-[500px] h-[300px] text-2xl text-white flex justify-center items-center">
+      <button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-indigo-400 bg-blue-500 py-3 px-4 rounded-xl">Save Changes</button>
+    </div>
+
+
+    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-20">2. Transition Duration</h1>
+
+    <div class="bg-stone-100 rounded-2xl shadow-md shadow-black/25 w-[900px] h-[300px] text-2xl text-white flex justify-center items-center gap-28">
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">duration-150</p>
+        <button class="transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-violet-500 py-3 px-5 rounded-xl">Button A</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">duration-300</p>
+        <button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-violet-500 py-3 px-5 rounded-xl">Button B</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">duration-700</p>
+        <button class="transition delay-150 duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-violet-500 py-3 px-5 rounded-xl">Button C</button>
+      </div>
+    </div>
+
+        
+    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-20">3. Transition Timing Function</h1>
+
+    <div class="bg-stone-100 rounded-2xl shadow-md shadow-black/25 w-[900px] h-[300px] text-2xl text-white flex justify-center items-center gap-28">
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">ease-in</p>
+        <button class="transition delay-150 duration-300 ease-in hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-sky-500 py-3 px-5 rounded-xl">Button A</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">ease-out</p>
+        <button class="transition delay-150 duration-300 ease-out hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-sky-500 py-3 px-5 rounded-xl">Button B</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">ease-in-out</p>
+        <button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-sky-500 py-3 px-5 rounded-xl">Button C</button>
+      </div>
+    </div>
+
+
+    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-20">4. Transition Delay</h1>
+        
+    <div class="bg-stone-100 rounded-2xl shadow-md shadow-black/25 w-[900px] h-[300px] text-2xl text-white flex justify-center items-center gap-28">
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">delay-150</p>
+        <button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-green-500 py-3 px-5 rounded-xl">Button A</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">delay-300</p>
+        <button class="transition delay-300 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-green-500 py-3 px-5 rounded-xl">Button B</button>
+      </div>
+      <div>
+        <p class="font-semibold text-xl text-stone-400 text-center mb-4">delay-700</p>
+        <button class="transition delay-700 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125 shadow-md shadow-black/40 hover:shadow-lg hover:shadow-black/40 bg-green-500 py-3 px-5 rounded-xl">Button C</button>
+      </div>
+    </div>
+
+
+    <!-- 5. https://tailwindcss.com/docs/animation -->
+
+
+    <h1 class="text-4xl font-bold mb-10 mt-20">5. Animation</h1>
+
+    <div class="bg-stone-100 rounded-2xl shadow-md shadow-black/25 w-[1000px] h-[300px] text-2xl text-white flex justify-center items-center gap-20">
+      <div>
+        <button class="bg-blue-500 py-3 px-5 rounded-xl shadow-md shadow-black/50 flex justify-center items-center" disabled>
+          <svg class="mr-3 size-6 animate-spin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>
+          Processing...</button>
+        <p class="font-semibold text-xl text-stone-400 text-center mt-4">animate-spin</p>
+      </div>
+      <div class="p-3 relative flex flex-col">
+        <button class="bg-green-500 py-3 px-5 rounded-xl shadow-md shadow-black/50 flex justify-center items-center" disabled>
+          Inbox
+          <div class="absolute bg-rose-500 text-xl rounded-full size-6 top-1 right-1"></div>
+          <div class="absolute animate-ping bg-rose-500 rounded-full size-6 top-1 right-1"></div>
+        </button>
+        <p class="font-semibold text-xl text-stone-400 text-center mt-4">animate-ping</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <div class="bg-stone-200 py-3 px-5 rounded-xl shadow-md shadow-black/50 flex justify-center items-center">
+          <svg class="size-8 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+        </div>
+        <p class="font-semibold text-xl text-stone-400 text-center mt-4">animate-pulse</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <div class="animate-bounce bg-yellow-400 p-4 rounded-full shadow-md shadow-black/50 flex justify-center items-center">
+          <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <p class="font-semibold text-xl text-stone-400 text-center mt-2">animate-bounce</p>
+      </div>
+    </div>
+
+    <!-- Transition & Transform -->
+
+    <!-- Animation -->
+  </body>
+</html>
